@@ -1,16 +1,17 @@
 Summary:	A library to play Commodore 64 music
+Summary(pl.UTF-8):	Biblioteka do odtwarzania muzyki z Commodore 64
 Name:		libsidplayfp
-Version:	1.0.2
+Version:	1.1.0
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Libraries
-Source0:	http://downloads.sourceforge.net/sidplay-residfp/libsidplayfp/1.0/%{name}-%{version}.tar.gz
-# Source0-md5:	49f67b0556eb147d10a66855dd90aea7
+Source0:	http://downloads.sourceforge.net/sidplay-residfp/%{name}-%{version}.tar.gz
+# Source0-md5:	21917667ce1a19a905a18e1ba073ed70
 URL:		http://sourceforge.net/projects/sidplay-residfp/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
-BuildRequires:	libtool >= 2:1.5
+BuildRequires:	libtool >= 2:2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -18,6 +19,11 @@ Libsidplayfp (and its console frontend sidplayfp) is a fork of
 sidplay2 born with the aim to improve the quality of emulating the
 6581, 8580 chips and the surrounding C64 system in order to play SID
 music better.
+
+%description -l pl.UTF-8
+Libsidplayfp (i jego konsolowy interfejs sidplayfp) to odgałęzienie
+sidplay2 mające na celu poprawienie jakości emulacji układów 6581 i 8580
+wraz z systemem C64, aby lepiej odtwarzać muzykę SID.
 
 %package devel
 Summary:	Header files for compiling apps that use libsidplayfp
