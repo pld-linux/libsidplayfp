@@ -1,12 +1,12 @@
 Summary:	A library to play Commodore 64 music
 Summary(pl.UTF-8):	Biblioteka do odtwarzania muzyki z Commodore 64
 Name:		libsidplayfp
-Version:	1.8.6
+Version:	1.8.7
 Release:	1
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/sidplay-residfp/%{name}-%{version}.tar.gz
-# Source0-md5:	fe1a88baa347cb896234327f61e62428
+# Source0-md5:	9f6d46a1c2572cc2a6837173895d6f21
 URL:		http://sourceforge.net/projects/sidplay-residfp/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
