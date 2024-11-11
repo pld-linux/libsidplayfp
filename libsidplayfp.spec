@@ -1,18 +1,19 @@
 Summary:	A library to play Commodore 64 music
 Summary(pl.UTF-8):	Biblioteka do odtwarzania muzyki z Commodore 64
 Name:		libsidplayfp
-Version:	2.7.1
+Version:	2.11.0
 Release:	1
 License:	GPL v2+
 Group:		Libraries
-Source0:	http://downloads.sourceforge.net/sidplay-residfp/%{name}-%{version}.tar.gz
-# Source0-md5:	5abb52cb2db56faab1b8a1fed0921052
-URL:		http://sourceforge.net/projects/sidplay-residfp/
+Source0:	https://downloads.sourceforge.net/sidplay-residfp/%{name}-%{version}.tar.gz
+# Source0-md5:	e0b56361c0b82f25e93372a7bc2f6965
+URL:		https://sourceforge.net/projects/sidplay-residfp/
 BuildRequires:	autoconf >= 2.62
 BuildRequires:	automake
 BuildRequires:	exsid-driver-devel >= 2.0
 BuildRequires:	libgcrypt-devel >= 1.8
-BuildRequires:	libstdc++-devel
+# C++11 mandatory, 14/17/20 optional
+BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRequires:	libtool >= 2:2
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,7 +34,7 @@ Summary:	Header files for compiling apps that use libsidplayfp
 Summary(pl.UTF-8):	Pliki nagłówkowe do budowania aplikacji używających libsidplayfp
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	libstdc++-devel
+Requires:	libstdc++-devel >= 6:4.7
 
 %description devel
 This package contains the header files for compiling applications that
